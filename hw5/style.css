@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(153, 250, 218);
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 1080px;
+    min-width: 480px;
+    font-family: Arial;
+    background-color: rgb(231, 248, 244);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.first-part img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.fisrt-year-table {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+
+}
+.second-year-table {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.table-content div {
+    border: 1px solid rgb(165, 165, 165);
+    padding: 2%;
+    margin-right: 5%;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 750px) {
+    .fisrt-year-table {
+        display: block;
+        margin-top: 10%;
+    }
+    .second-year-table {
+        display: block;
+        margin-top: 10%;
+    }
+}
