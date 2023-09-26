@@ -63,9 +63,9 @@ document.addEventListener("DOMContentLoaded", function() {
             } else if (cellValue === "mc") {
                 memmory = 0;
             } else if (cellValue === "m+") {  
-                memmory += currentCalculation;
+                memmory += parseFloat(currentCalculation);
             } else if ( cellValue === "m-") {   
-                memmory -= currentCalculation;
+                memmory -= parseFloat(currentCalculation);
             } else if (cellValue === "mr") {
                 currentCalculation = memmory;
                 updateResult();
@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 currentCalculation += cellValue;
                 updateResult();
             }
+            console.log(memmory)
         }
     });
 
