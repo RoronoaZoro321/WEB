@@ -1,0 +1,160 @@
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    font-size: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 35% 1fr;
+    gap: 0px;
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .grid{
+        display:block;
+     }
+}
+
+@media screen and (min-width: 601px) and (max-width: 899px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-height: 400px) {
+    .profile_pic img {
+        scale: 1.5;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+}
+
+#item-0 {
+    background-color: #DB8DBD;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 2;
+    padding: 5%;
+    /* max-width: 250px; */
+}
+#item-0:hover {
+    background-color: rgb(245, 100, 192);
+}
+
+#item-1 {
+    background-color: #bd78d0;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+}
+
+#item-1:hover {
+    background-color: #c308f7;
+}
+
+#item-2 {
+    background-color: #93ad95;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+#item-2:hover {
+    background-color: #42dd4f;
+}
+
+#item-3 {
+    background-color: #77D7DE;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 3;
+}
+#item-3:hover {
+    background-color: #20eefd;
+}
+
+.profile {
+    margin-bottom: 20%;
+    text-align: center;
+}
+
+.profile_pic img {
+    width: 100px;
+    height: 90px;
+    border-radius: 100%;
+}
+.address {
+    margin-bottom: 30%;
+}
+
+.contacts {
+    margin-bottom: 20%;
+}
+
+input, textarea, select {
+    font-family:monospace;
+    background-color: #ffffff;
+}
+
+input:hover, textarea:hover, select:hover {
+    background-color: rgb(220, 220, 220)
+}
+
+.personal_info {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.education {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.skills {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+input {
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+strong {
+    margin-top: 5%;
+}
+
+button {
+    float: right;
+    margin-top: 5%;
+    padding: 2%; 
+    background-color: rgb(46, 197, 84); 
+    border: 0; 
+    color: aliceblue; 
+    font-size: large;
+}
+
+button:hover {
+    background-color: rgb(9, 73, 25); 
+    font-size: larger;
+}   
+

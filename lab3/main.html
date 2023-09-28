@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Resume</title>
+    </head>
+    <body>
+        <table cellspacing="10" cellpadding="5" align="center" style="width: 80%; margin: 0 auto">
+            <colgroup>
+                <col width="30%" />
+                <col width="70%" />
+            </colgroup>
+            <tr>
+                <td rowspan="8" style="vertical-align: top; text-align: center">
+                    <img src="https://icon-library.com/images/person-image-icon/person-image-icon-25.jpg" alt="Profile Picture" width="200" height="200" />
+                    <br />
+                    <hr style="margin: 0" />
+                    <strong>Profile:</strong>
+                    <br />
+                    <textarea id="profile" name="profile" rows="4" required style="width: 100%"></textarea>
+                </td>
+                <td>
+                    <strong>Personal Information:</strong>
+                    <hr style="margin: 0" />
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Name:</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="name" name="name" required placeholder="John Doe" style="width: 100%" />
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Age:</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="range" id="age" name="age" min="0" max="60" required onchange="updateAgeValue()" />
+                    <span id="ageValue">0</span>
+                    <script>
+                        updateAgeValue();
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Email:</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" id="email" name="email" required placeholder="myEmail@gmail.com" style="width: 100%" />
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Phone:</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="tel" id="phone" name="phone" required placeholder="092-345-6789" style="width: 100%" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Address:</strong>
+                    <hr style="margin: 0" />
+                </td>
+                <td>
+                    <strong>Education:</strong>
+                    <hr style="margin: 0" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="street" name="street" required placeholder="Maple Street" style="width: 100%" />
+                </td>
+                <td><strong>University:</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="city" name="city" required placeholder="California" style="width: 100%" />
+                </td>
+                <td>
+                    <input type="text" id="university" name="university" required placeholder="KMITL" style="width: 100%" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="country" name="country" required style="width: 100%">
+                        <option value="">Select a country</option>
+                        <script>
+                            // Populate the country dropdown list
+                            populateCountries("country");
+                        </script>
+                    </select>
+                </td>
+                <td><strong>Degree:</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="text" id="degree" name="degree" required placeholder="Software Engineering" style="width: 100%" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><strong>Year of Graduation:</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="date" id="graduationYear" name="graduationYear" min="1900" max="2099" required style="width: 100%" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Contacts:</strong>
+                    <hr style="margin: 0" />
+                </td>
+                <td>
+                    <strong>Skills & Experience:</strong>
+                    <hr style="margin: 0" />
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Reference:</strong></td>
+                <td><strong>Skills:</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea id="ref" name="experience" rows="4" required style="width: 100%"></textarea>
+                </td>
+                <td>
+                    <textarea id="skills" name="skills" rows="4" required style="width: 100%"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Favorite Colour:</strong></td>
+                <td><strong>Experience:</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="color" id="favColour" name="favoriteColour" required style="width: 100%" />
+                </td>
+                <td>
+                    <textarea id="experience" name="experience" rows="4" required style="width: 100%"></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <div align="center" style="margin-top: 10px">
+            <input type="submit" value="Submit" onclick="displayResume()" style="padding: 10px 20px; font-size: 16px; background-color: #4caf50; color: white; border: none; cursor: pointer; border-radius: 5px" />
+        </div>
+    </body>
+    <script src="Lab.js"></script>
+</html>
