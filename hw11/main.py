@@ -53,6 +53,7 @@ def addStudent_1():
 
     enroll4 = root.students['1100'].enrollCourse(root.courses['301'])
     enroll4.setScore(57)
+    enroll4.setScore(57)
 
 
 # def retrive_course(id):
