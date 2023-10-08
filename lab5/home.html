@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="http://161.246.5.61/Lab.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+    <div class="grid">
+        <div id="item-0">
+            <div class="profile">
+                <div class="profile_pic">
+                    <img src="./richa.png"/>
+                </div>
+                <hr style="margin: 0; border-width: 2px;" />
+                <strong>Profile:</strong>
+                <textarea id="profile" name="profile" rows="5" style="width: 100%"></textarea>    
+            </div>
+            <div class="address">
+                <strong>Address:</strong>
+                <hr style="margin: 0" />
+                <input type="text" id="street" name="street" required placeholder="Maple Street" style="width: 100%" />
+                <input type="text" id="city" name="city" required placeholder="California" style="width: 100%" />
+                <select id="country" name="country" required style="width: 100%">
+                    <option value="">Select a country</option>
+                    <script>
+                        populateCountries("country");
+                    </script>
+                </select>
+            </div>
+            <div class="contacts">
+                <strong>Contacts:</strong>
+                <hr style="margin: 0" />
+                <strong>Reference:</strong>
+                <textarea id="ref" name="experience" rows="5" required style="width: 100%"></textarea>
+                <strong>Favorite Colour:</strong>
+                <input type="color" id="favColour" name="favoriteColour" required style="width: 100%" />
+                <textarea id="experience" name="experience" rows="5" required style="width: 100%"></textarea>    
+            </div>
+        </div>
+        <div id="item-1">
+            <div class="personal_info">
+                <strong>Personal Information:</strong>
+                <hr style="margin: 0" />
+                <strong>Name:</strong>
+                <input type="text" id="name" name="name" required placeholder="John Doe" style="width: 100%" />
+                <strong>Age:</strong>
+                <input type="range" id="age" name="age" min="0" max="100" required onchange="updateAgeValue()" />
+                <span id="ageValue">50</span>
+                <br>
+                <strong>Email:</strong>
+                <input type="email" id="email" name="email" required placeholder="myEmail@gmail.com" style="width: 100%" />
+                <strong>Phone:</strong>
+                <input type="tel" id="phone" name="phone" required placeholder="092-345-6789" style="width: 100%" />
+            </div>
+        </div>
+        <div id="item-2">
+            <div class="education">
+                <strong>Education:</strong>
+                <hr style="margin: 0" />
+                <input type="text" id="street" name="street" required placeholder="Maple Street" style="width: 100%" />
+                <strong>University:</strong>
+                <input type="text" id="university" name="university" required placeholder="KMITL" style="width: 100%" />
+                <strong>Degree:</strong>
+                <input type="text" id="degree" name="degree" required placeholder="Software Engineering" style="width: 100%" />
+                <strong>Year of Graduation:</strong>
+                <input type="date" id="graduationYear" name="graduationYear" required style="width: 100%" />
+            </div>
+        </div>
+        <div id="item-3">
+            <div class="skills">
+                <strong>Skills & Experience:</strong>
+                <hr style="margin: 0" />
+                <strong>Skills:</strong>
+                <textarea id="skills" name="skills" rows="5" required style="width: 100%"></textarea>
+                <strong>Experience:</strong>
+                <textarea id="experience" name="experience" rows="5" required style="width: 100%"></textarea>
+                <button type="submit" value="Submit" onclick="displayResume()" >Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

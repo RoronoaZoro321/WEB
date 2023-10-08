@@ -1,0 +1,59 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Quiz</title>
+
+</head>
+<style>
+    img {
+        width: 40vw;
+        height: 20vh;
+        max-width: 12rem;
+        max-height: 12rem;
+    }
+    table, td {
+        border: solid 1px black;
+        border-collapse: collapse;
+    }
+</style>
+<body style="text-align: center;">
+    <table align="center">
+        <thead>
+            <tr><th colspan='2'><h1 id='questionNum'>Question 1</h1></th></tr>
+            <tr>
+                <th colspan='2'><h2 id='question'></h2></th>
+            </tr>
+        </thead>
+        <tdata>
+            <tr style="width: 1.25rem; height: 2rem"></tr>
+            <tr style="width: 1.25rem; height: 1.25rem">
+                <td style="background-color: ghostwhite;"><img id="ans1"/></td>
+                <td style="background-color: ghostwhite;"><img id="ans2"/></td>
+            </tr>
+            <tr style="width: 1.25rem; height: 1.25rem">
+                <td style="background-color: ghostwhite;"><img id="ans3"/></td>
+                <td style="background-color: ghostwhite;"><img id="ans4"/></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: skyblue; border: none;"><h1 id="wrong" style="display: none; color: rgb(255, 0, 0);">Wrong!</h1></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: skyblue; border: none;"><h1 id="correct" style="display: none; color: green;">Correct!</h1></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: skyblue; border: none;"><h3 id="explanation" style="display: none;"></h3></td>
+            </tr>
+            <tr>
+                <td><h2 id="scoretext" style="background-color: ghostwhite;">Score : 0</h2></h3></td>
+                <td id="next" style="background-color: ghostwhite;">
+                    <h1>Next</h1>
+                </td>
+            </tr>
+        </tdata>
+    </table>
+    
+    <script src="src.js"></script>
+</body>
+
+</html>

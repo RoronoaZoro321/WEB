@@ -23,7 +23,10 @@ class Course(persistent.Persistent):
             if score >= grade["Min"] and score <= grade["Max"]:
                 return grade["Grade"]
     def setGradeScheme(self, scheme):
-        self.gradeScheme = scheme
+        if type(scheme) == list and len(scheme) == 5 and type(scheme[0]) == dict \
+        and "Grade" in scheme[0] and "Min" in scheme[0] and "Max" in scheme[0]:
+            self.gradeScheme = scheme
+        else: print("Invalid correct format for grade scheme")
 
 class Student(persistent.Persistent):
     def __init__(self, id, name=""):
@@ -63,7 +66,7 @@ class Student(persistent.Persistent):
         return format(totalGrade / totalCredit, ".2f") 
 
     def printTranscript(self):
-        print("\t Transcript")
+        print("\tTranscript")
         print(f"ID: \t {self.id}  Name: {self.name}")
         print("Course list")
         for enroll in self.enroll:
